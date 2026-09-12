@@ -1,0 +1,66 @@
+{
+    "registers": 8,
+    "word_size": 16,
+    "instructions": {
+        "LOAD": {
+            "opcode": "0001",
+            "operands": 2,
+            "type": "memory"
+        },
+        "STORE": {
+            "opcode": "0010",
+            "operands": 2,
+            "type": "memory"
+        },
+        "ADD": {
+            "opcode": "0011",
+            "operands": 2,
+            "type": "arithmetic"
+        },
+        "SUB": {
+            "opcode": "0100",
+            "operands": 2,
+            "type": "arithmetic"
+        },
+        "AND": {
+            "opcode": "0101",
+            "operands": 2,
+            "type": "logical"
+        },
+        "OR": {
+            "opcode": "0110",
+            "operands": 2,
+            "type": "logical"
+        },
+        "XOR": {
+            "opcode": "0111",
+            "operands": 2,
+            "type": "logical"
+        },
+        "JMP": {
+            "opcode": "1000",
+            "operands": 1,
+            "type": "control"
+        },
+        "BEQ": {
+            "opcode": "1001",
+            "operands": 1,
+            "type": "control"
+        },
+        "BNE": {
+            "opcode": "1010",
+            "operands": 1,
+            "type": "control"
+        },
+        "CMP": {
+            "opcode": "1011",
+            "operands": 2,
+            "type": "comparison"
+        },
+        "HALT": {
+            "opcode": "1111",
+            "operands": 0,
+            "type": "control"
+        }
+    }
+}
